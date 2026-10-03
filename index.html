@@ -1,402 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ravi Sharma — DevOps & Cloud Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ravi Sharma</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #0a0a0a;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-  }
-  html { scroll-behavior: smooth; }
-  .gradient-text {
-    background: linear-gradient(135deg, #0ea5e9, #06b6d4, #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .glow { box-shadow: 0 0 80px rgba(14, 165, 233, 0.35); }
-  .card {
-    background: #111;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .card:hover {
-    border-color: rgba(14, 165, 233, 0.5);
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
-  }
-  ::-webkit-scrollbar { width: 8px; }
-  ::-webkit-scrollbar-track { background: #0a0a0a; }
-  ::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 4px; }
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.25;
-    animation: float 8s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, -30px) scale(1.1); }
-  }
-  .nav-link {
-    position: relative;
-  }
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #0ea5e9, #06b6d4);
-    transition: width 0.3s;
-  }
-  .nav-link:hover::after { width: 100%; }
+body{background:#0a0a0a;color:#fff;font-family:sans-serif;margin:0;padding:20px;text-align:center}
+.blue{color:#0ea5e9}
+.card{background:#111;border:1px solid #222;border-radius:16px;padding:20px;margin:10px;display:inline-block;vertical-align:top;width:260px}
+.card:hover{border-color:#0ea5e9}
+.photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid #0ea5e9;margin:20px auto;display:block}
+.btn{background:#0ea5e9;color:#fff;padding:10px 24px;border-radius:99px;text-decoration:none;display:inline-block;margin:8px}
+.tag{background:#0ea5e922;color:#0ea5e9;padding:3px 10px;border-radius:99px;font-size:12px;margin:2px;display:inline-block}
+a{color:#888;text-decoration:none}
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl py-4 border-b border-white/5">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-    <a href="#home" class="text-2xl font-extrabold gradient-text">Ravi Sharma</a>
-    <div class="hidden md:flex gap-8">
-      <a href="#about" class="nav-link text-gray-300 hover:text-sky-400 text-sm font-medium">About</a>
-      <a href="#skills" class="nav-link text-gray-300 hover:text-sky-400 text-sm font-medium">Skills</a>
-      <a href="#projects" class="nav-link text-gray-300 hover:text-sky-400 text-sm font-medium">Projects</a>
-      <a href="#certs" class="nav-link text-gray-300 hover:text-sky-400 text-sm font-medium">Certifications</a>
-      <a href="#contact" class="nav-link text-gray-300 hover:text-sky-400 text-sm font-medium">Contact</a>
-    </div>
-    <a href="#contact" class="px-5 py-2 bg-sky-500 hover:bg-cyan-500 rounded-full text-sm font-semibold transition">Hire Me</a>
-  </div>
-</nav>
+<img src="ravi-photo.jpg" class="photo" alt="Ravi Sharma">
+<h1 style="font-size:32px;margin:20px 0 5px">Hi, I'm <span class="blue">Ravi Sharma</span></h1>
+<p style="color:#aaa">DevOps & Cloud Engineer</p>
+<p style="color:#888">AWS • Kubernetes • Docker • Terraform • CI/CD</p>
 
-<!-- HERO -->
-<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 px-6">
-  <div class="blob bg-sky-500 w-96 h-96 top-20 left-10"></div>
-  <div class="blob bg-cyan-500 w-96 h-96 bottom-20 right-10" style="animation-delay: 2s;"></div>
-  <div class="blob bg-blue-600 w-80 h-80 top-1/2 left-1/2" style="animation-delay: 4s;"></div>
+<div style="margin:20px">
+<a href="mailto:ravisharma3470@gmail.com" class="btn">Contact Me</a>
+<a href="https://github.com/ravi-cloud511" class="btn">GitHub</a>
+</div>
 
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
-    <div class="hero-text">
-      <div class="inline-block px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-sm mb-6 backdrop-blur">
-        <span class="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-        Available for opportunities
-      </div>
-      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-        Hi, I'm <span class="gradient-text">Ravi Sharma</span>
-      </h1>
-      <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 font-semibold">
-        DevOps & Cloud Engineer
-      </h2>
-      <p class="text-gray-400 text-lg mb-8 leading-relaxed max-w-xl">
-        Building scalable cloud infrastructure and automating deployment pipelines. Specialized in <span class="text-sky-400 font-semibold">AWS, Kubernetes, Docker, Terraform</span> and CI/CD workflows.
-      </p>
-      <div class="flex flex-wrap gap-4 mb-10">
-        <a href="#contact" class="px-8 py-3 bg-sky-500 hover:bg-cyan-500 rounded-full font-semibold transition-all duration-300 hover:scale-105 glow">Get in Touch</a>
-        <a href="https://github.com/ravi-cloud511" target="_blank" class="px-8 py-3 border border-sky-500/50 hover:border-sky-500 hover:bg-sky-500/10 rounded-full font-semibold transition-all duration-300">View Projects</a>
-      </div>
-      <div class="flex gap-6 text-2xl">
-        <a href="https://github.com/ravi-cloud511" target="_blank" class="text-gray-400 hover:text-sky-400 transition hover:scale-125"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/ravicloud" target="_blank" class="text-gray-400 hover:text-sky-400 transition hover:scale-125"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:ravisharma3470@gmail.com" class="text-gray-400 hover:text-sky-400 transition hover:scale-125"><i class="fas fa-envelope"></i></a>
-        <a href="#" class="text-gray-400 hover:text-sky-400 transition hover:scale-125"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </div>
+<h2 style="margin-top:50px">Tech Stack</h2>
+<div>
+<span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+<span class="tag">Linux</span><span class="tag">Git</span><span class="tag">Jenkins</span>
+<span class="tag">Terraform</span><span class="tag">Java</span><span class="tag">Python</span>
+<span class="tag">CI/CD</span>
+</div>
 
-    <div class="flex justify-center">
-      <div class="hero-photo relative w-72 h-72 md:w-96 md:h-96">
-        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-500 to-cyan-500 blur-2xl opacity-40"></div>
-        <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-sky-500/40">
-          <img src="ravi-photo.jpg" alt="Ravi Sharma" class="w-full h-full object-cover" />
-        </div>
-        <div class="absolute -bottom-4 -right-4 bg-card border border-sky-500/30 rounded-2xl px-4 py-3 backdrop-blur">
-          <div class="text-xs text-gray-400">Experience</div>
-          <div class="font-bold text-sky-400">DevOps • Cloud</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<h2 style="margin-top:50px">Projects</h2>
+<div>
+<div class="card"><h3>Docker Web Server</h3><p style="color:#888;font-size:14px">Containerization practice</p></div>
+<div class="card"><h3>Java Gradle App</h3><p style="color:#888;font-size:14px">Java + Gradle build</p></div>
+<div class="card"><h3>Portfolio</h3><p style="color:#888;font-size:14px">This website</p></div>
+</div>
 
-<!-- ABOUT -->
-<section id="about" class="py-24 px-6 relative">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">About <span class="gradient-text">Me</span></h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full"></div>
-    </div>
+<h2 style="margin-top:50px">Certifications</h2>
+<div>
+<div class="card">Microsoft Azure Fundamentals</div>
+<div class="card">AWS Solutions Architect</div>
+<div class="card">Google Cloud Operations</div>
+<div class="card">AWS Technical Essentials</div>
+</div>
 
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="card rounded-3xl p-8">
-        <div class="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center mb-6">
-          <i class="fas fa-user text-sky-400 text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold mb-4 text-sky-400">Who am I?</h3>
-        <p class="text-gray-300 leading-relaxed mb-4">
-          I'm a DevOps & Cloud Engineer with a BCA in Cloud Technology from IGNOU. I focus on Docker, Cloud, automation, CI/CD, and building reliable software delivery workflows.
-        </p>
-        <p class="text-gray-300 leading-relaxed mb-6">
-          Currently learning and building practical projects around DevOps and Cloud technologies to strengthen my engineering foundation.
-        </p>
-        <div class="flex items-center gap-2 text-sm text-gray-400">
-          <i class="fas fa-map-marker-alt text-sky-400"></i>
-          <span>Greater Delhi Area, India</span>
-        </div>
-      </div>
+<h2 style="margin-top:50px">Connect</h2>
+<div>
+<a href="https://github.com/ravi-cloud511" class="card"><i class="fab fa-github" style="font-size:30px;color:#0ea5e9"></i><br>GitHub</a>
+<a href="https://linkedin.com/in/ravicloud" class="card"><i class="fab fa-linkedin" style="font-size:30px;color:#0ea5e9"></i><br>LinkedIn</a>
+</div>
 
-      <div class="grid grid-cols-2 gap-6">
-        <div class="card rounded-2xl p-6 text-center">
-          <div class="text-4xl font-extrabold gradient-text mb-2">6+</div>
-          <div class="text-gray-400 text-sm">Certifications</div>
-        </div>
-        <div class="card rounded-2xl p-6 text-center">
-          <div class="text-4xl font-extrabold gradient-text mb-2">3+</div>
-          <div class="text-gray-400 text-sm">Projects</div>
-        </div>
-        <div class="card rounded-2xl p-6 text-center">
-          <div class="text-4xl font-extrabold gradient-text mb-2">A+</div>
-          <div class="text-gray-400 text-sm">BCA Grade</div>
-        </div>
-        <div class="card rounded-2xl p-6 text-center">
-          <div class="text-4xl font-extrabold gradient-text mb-2">1K+</div>
-          <div class="text-gray-400 text-sm">LinkedIn Views</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<p style="color:#555;margin-top:50px;font-size:14px">© 2026 Ravi Sharma</p>
 
-<!-- SKILLS -->
-<section id="skills" class="py-24 px-6 bg-white/[0.02]">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Tech <span class="gradient-text">Stack</span></h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full mb-4"></div>
-      <p class="text-gray-400">Tools & technologies I work with</p>
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" id="skills-grid"></div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="py-24 px-6">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Featured <span class="gradient-text">Projects</span></h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full"></div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="card rounded-3xl p-8 group">
-        <div class="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center mb-6">
-          <i class="fab fa-docker text-sky-400 text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-3 group-hover:text-sky-400 transition">Docker Web Server</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">A Docker-based web server project built to practice containerization and deployment workflows.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Docker</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Linux</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Nginx</span>
-        </div>
-        <a href="https://github.com/ravi-cloud511" target="_blank" class="text-gray-400 hover:text-sky-400 transition inline-flex items-center gap-2">
-          <i class="fab fa-github"></i> View Code
-        </a>
-      </div>
-
-      <div class="card rounded-3xl p-8 group">
-        <div class="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center mb-6">
-          <i class="fab fa-java text-sky-400 text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-3 group-hover:text-sky-400 transition">Java Gradle Application</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">A Java application built with Gradle to practice application builds and DevOps workflows.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Java</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Gradle</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">CI/CD</span>
-        </div>
-        <a href="https://github.com/ravi-cloud511" target="_blank" class="text-gray-400 hover:text-sky-400 transition inline-flex items-center gap-2">
-          <i class="fab fa-github"></i> View Code
-        </a>
-      </div>
-
-      <div class="card rounded-3xl p-8 group">
-        <div class="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center mb-6">
-          <i class="fas fa-globe text-sky-400 text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-3 group-hover:text-sky-400 transition">Ravi Sharma Portfolio</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Personal portfolio website built with modern web technologies and responsive design.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">HTML</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">Tailwind</span>
-          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium">GSAP</span>
-        </div>
-        <a href="https://github.com/ravi-cloud511" target="_blank" class="text-gray-400 hover:text-sky-400 transition inline-flex items-center gap-2">
-          <i class="fab fa-github"></i> View Code
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DEVOPS LIFECYCLE -->
-<section class="py-24 px-6 bg-white/[0.02]">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">My DevOps <span class="gradient-text">Lifecycle</span></h2>
-    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full mb-4"></div>
-    <p class="text-gray-400 mb-16">Keep Learning. Keep Building. Keep Shipping.</p>
-
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6" id="lifecycle-grid"></div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certs" class="py-24 px-6">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Licenses & <span class="gradient-text">Certifications</span></h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full mb-4"></div>
-      <p class="text-gray-400">Continuous learning journey</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6" id="certs-grid"></div>
-  </div>
-</section>
-
-<!-- GITHUB STATS -->
-<section class="py-24 px-6 bg-white/[0.02]">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">GitHub <span class="gradient-text">Activity</span></h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full"></div>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="card rounded-2xl p-6">
-        <img src="https://github-readme-stats.vercel.app/api?username=ravi-cloud511&show_icons=true&theme=dark&bg_color=111111&border_color=1f1f1f&title_color=0ea5e9&icon_color=0ea5e9&text_color=ffffff" alt="GitHub Stats" class="w-full rounded-xl" />
-      </div>
-      <div class="card rounded-2xl p-6">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ravi-cloud511&layout=compact&theme=dark&bg_color=111111&border_color=1f1f1f&title_color=0ea5e9&text_color=ffffff" alt="Top Languages" class="w-full rounded-xl" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-24 px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Let's <span class="gradient-text">Connect</span></h2>
-    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto rounded-full mb-4"></div>
-    <p class="text-gray-400 mb-12">Open to opportunities, collaborations, and conversations</p>
-
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-      <a href="https://github.com/ravi-cloud511" target="_blank" class="card rounded-2xl p-8 group">
-        <i class="fab fa-github text-3xl text-sky-400 mb-4 group-hover:scale-125 transition"></i>
-        <div class="font-semibold">GitHub</div>
-        <div class="text-sm text-gray-400 mt-1">@ravi-cloud511</div>
-      </a>
-
-      <a href="https://linkedin.com/in/ravicloud" target="_blank" class="card rounded-2xl p-8 group">
-        <i class="fab fa-linkedin text-3xl text-sky-400 mb-4 group-hover:scale-125 transition"></i>
-        <div class="font-semibold">LinkedIn</div>
-        <div class="text-sm text-gray-400 mt-1">Ravi Sharma</div>
-      </a>
-
-      <a href="mailto:ravisharma3470@gmail.com" class="card rounded-2xl p-8 group">
-        <i class="fas fa-envelope text-3xl text-sky-400 mb-4 group-hover:scale-125 transition"></i>
-        <div class="font-semibold">Email</div>
-        <div class="text-sm text-gray-400 mt-1 break-all">ravisharma3470@gmail.com</div>
-      </a>
-    </div>
-
-    <a href="mailto:ravisharma3470@gmail.com" class="inline-block px-10 py-4 bg-sky-500 hover:bg-cyan-500 rounded-full font-semibold transition-all hover:scale-105 glow">
-      Send me an Email <i class="fas fa-arrow-right ml-2"></i>
-    </a>
-
-    <div class="flex items-center justify-center gap-2 text-gray-400 mt-12">
-      <i class="fas fa-map-marker-alt text-sky-400"></i>
-      <span>Greater Delhi Area, India</span>
-    </div>
-  </div>
-
-  <footer class="text-center text-gray-500 text-sm mt-20 pt-8 border-t border-white/5">
-    <p>© 2026 Ravi Sharma — Built with ❤️ using HTML, Tailwind & GSAP</p>
-  </footer>
-</section>
-
-<script>
-  // Skills Data
-  const skills = [
-    { name: "AWS", icon: "fa-aws", color: "#FF9900" },
-    { name: "Docker", icon: "fa-docker", color: "#2496ED" },
-    { name: "Kubernetes", icon: "fa-cube", color: "#326CE5" },
-    { name: "Linux", icon: "fa-linux", color: "#FCC624" },
-    { name: "Git", icon: "fa-git-alt", color: "#F05032" },
-    { name: "GitHub", icon: "fa-github", color: "#ffffff" },
-    { name: "Jenkins", icon: "fa-jenkins", color: "#D24939" },
-    { name: "Terraform", icon: "fa-cloud", color: "#7B42BC" },
-    { name: "Java", icon: "fa-java", color: "#007396" },
-    { name: "Python", icon: "fa-python", color: "#3776AB" },
-    { name: "Database", icon: "fa-database", color: "#00758F" },
-    { name: "CI/CD", icon: "fa-infinity", color: "#0ea5e9" }
-  ];
-
-  const skillsGrid = document.getElementById("skills-grid");
-  skills.forEach(skill => {
-    skillsGrid.innerHTML += `
-      <div class="card rounded-2xl p-6 flex flex-col items-center gap-3">
-        <i class="fab ${skill.icon} text-4xl" style="color: ${skill.color}"></i>
-        <span class="text-sm text-gray-300 font-medium">${skill.name}</span>
-      </div>
-    `;
-  });
-
-  // Lifecycle Data
-  const lifecycle = [
-    { name: "Planning", icon: "fa-clipboard-list", color: "#0ea5e9" },
-    { name: "Development", icon: "fa-code", color: "#06b6d4" },
-    { name: "Testing", icon: "fa-vial", color: "#3b82f6" },
-    { name: "Deployment", icon: "fa-rocket", color: "#8b5cf6" },
-    { name: "Monitoring", icon: "fa-chart-line", color: "#ec4899" },
-    { name: "Feedback", icon: "fa-comments", color: "#f59e0b" }
-  ];
-
-  const lifecycleGrid = document.getElementById("lifecycle-grid");
-  lifecycle.forEach((step, i) => {
-    lifecycleGrid.innerHTML += `
-      <div class="card rounded-2xl p-8">
-        <div class="w-14 h-14 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: ${step.color}20;">
-          <i class="fas ${step.icon} text-xl" style="color: ${step.color}"></i>
-        </div>
-        <div class="font-semibold">${step.name}</div>
-        <div class="text-xs text-gray-500 mt-1">Step ${i + 1}</div>
-      </div>
-    `;
-  });
-
-  // Certifications Data
-  const certs = [
-    { title: "Microsoft Azure Fundamentals", issuer: "Microsoft", date: "2025" },
-    { title: "AWS Solutions Architecture Job Simulation", issuer: "Forage", date: "Jan 2026" },
-    { title: "Cloud Platform Job Simulation", issuer: "Verizon / Forage", date: "Jan 2026" },
-    { title: "AWS Certified ML — Specialty (Exam Prep)", issuer: "Amazon Web Services", date: "Dec 2025" },
-    { title: "AWS Technical Essentials", issuer: "Amazon Web Services", date: "Dec 2025" },
-    { title: "Google Cloud — Scaling with Operations", issuer: "Google Cloud", date: "2025" }
-  ];
-
-  const certsGrid = document.getElementById("certs-grid");
-  certs.forEach(cert => {
-    certsGrid.innerHTML += `
-      <div cl
+</body>
+</html>
